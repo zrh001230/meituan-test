@@ -11,13 +11,18 @@ npm install
 npm run dev
 ```
 
-## 构建与 Cloudflare Pages 部署
+## 公开链接
+
+https://meituan-test.mood-space.workers.dev
+
+## 构建与 Cloudflare 部署
 
 构建命令：`npm run build`，产物目录：`dist`。
 
 ```sh
-npm run build
-npx wrangler pages deploy dist --project-name=meituan-test
+npm run deploy
 ```
+
+Cloudflare 项目名固定为 `meituan-test`。后续执行同一部署命令更新已有项目，不更改项目名或账户子域名，以保持访问链接不变。
 
 日记仅保存在当前浏览器，不会同步到服务器。本产品不提供诊断或治疗。
